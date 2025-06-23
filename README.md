@@ -19,3 +19,7 @@ A clean Weather App built using OpenWeatherMap API to fetch real-time weather da
  - http: ^1.3.0
  - cupertino_icons: ^1.0.8
  - geolocator_platform_interface: ^4.2.6
+
+## Screenshot
+
+![Home Screen](https://github.com/YuvrajSingh514/weather_app/blob/9482e953ff33715942eafe3dca43049d564d1fd5/Screenshot_20250623-211213.jpg)
