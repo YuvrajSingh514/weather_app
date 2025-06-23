@@ -1,16 +1,21 @@
-# weather_app3
+# weather_app
 
-A new Flutter project.
+A clean Weather App built using OpenWeatherMap API to fetch real-time weather data based on the user's current location. It uses BLoC for state management and ensures a smooth user experience.
 
-## Getting Started
+## Features
+- Fetches weather data based on current location.
+- Displays current temperature, weather condition, location name, day, date, time, sunrise and sunset time, maximum and minimum    temperature.
+- Real-time data using OpenWeather API.
+- State management with BLoC.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+ - flutter:
+    sdk: flutter
+ - geolocator: ^14.0.0
+ - weather: ^3.2.1
+ - intl: ^0.20.2
+ - equatable: ^2.0.7
+ - flutter_bloc: ^9.1.1
+ - http: ^1.3.0
+ - cupertino_icons: ^1.0.8
+ - geolocator_platform_interface: ^4.2.6
