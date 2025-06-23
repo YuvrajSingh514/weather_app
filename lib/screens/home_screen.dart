@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,20 +18,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
- 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      // extendBodyBehindAppBar: true,
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      //   systemOverlayStyle: SystemUiOverlayStyle(
-      //     statusBarBrightness: Brightness.dark,
-      //   ),
-      // ),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarBrightness: Brightness.dark,
+        ),
+      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(40, 45, 40, 20),
         child: SizedBox(
@@ -83,21 +82,22 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            state.weather.areaName?? '',
+                            state.weather.areaName ?? '',
                             style: TextStyle(
                               color: Colors.white,
-                              fontWeight: FontWeight.w300,
+                              fontSize: 24,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
                           SizedBox(height: 7),
-                          Text(
-                            'Good Morning',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 25,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+                          // Text(
+                          //   'Good Morning',
+                          //   style: TextStyle(
+                          //     color: Colors.white,
+                          //     fontSize: 25,
+                          //     fontWeight: FontWeight.w500,
+                          //   ),
+                          // ),
                           getWeatherIcon(state.weather.weatherConditionCode!),
                           Center(
                             child: Text(
@@ -130,11 +130,11 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
-                                fontWeight: FontWeight.w200,
+                                fontWeight: FontWeight.w300,
                               ),
                             ),
                           ),
-                          SizedBox(height: 35),
+                          SizedBox(height: 40),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         style: TextStyle(
                                           color: Colors.white,
 
-                                          fontWeight: FontWeight.w200,
+                                          fontWeight: FontWeight.w300,
                                         ),
                                       ),
 
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         style: TextStyle(
                                           color: Colors.white,
 
-                                          fontWeight: FontWeight.w200,
+                                          fontWeight: FontWeight.w300,
                                         ),
                                       ),
 
@@ -216,7 +216,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         style: TextStyle(
                                           color: Colors.white,
 
-                                          fontWeight: FontWeight.w200,
+                                          fontWeight: FontWeight.w300,
                                         ),
                                       ),
 
@@ -243,7 +243,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         style: TextStyle(
                                           color: Colors.white,
 
-                                          fontWeight: FontWeight.w200,
+                                          fontWeight: FontWeight.w300,
                                         ),
                                       ),
 
